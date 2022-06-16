@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>导改位置</title>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+    <link rel="stylesheet" href="compnains/style.css">
+    <script>
+        window._AMapSecurityConfig = {
+            serviceHost:'http://82.156.176.5:80/_AMapService',  
+            // 例如 ：serviceHost:'http://1.1.1.1:80/_AMapService',
+        }
+    </script>
+    <style>
+        html,body,#container{
+            height:100%;
+            width:100%;
+        }
+        .amap-marker-label{
+            border: 1px solid #53c4f7;
+        }
+    </style> 
+<script src="components/header.js" type="text/javascript" defer></script>
+<script src="components/footer.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+  <header-component></header-component>  
+  
+
+<div id="container"></div>
+    
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=162aceeb9522bc36bccb7f375d9ccebd"></script>
+<script type="text/javascript" src="data\position_dg.js"></script>
+<script type="text/javascript" src="data\anchor.js"></script>
+<script type="text/javascript" src="data\position_name_dg.js"></script>
+<script type="text/javascript" src="data\loadmap.js"></script>
+<div class="input-card" style="width:14rem;">
+    <div class="input-item">
+      <label>编号：</label>
+      <button class="btn" id="add-marker" style="margin-right:1rem;">显示</button>
+      <button class="btn" id="remove-marker">隐藏</button>
+    </div>
+ 
+    <div class="input-item">
+      <label>卫星：</label>
+      <button class="btn" id="add-satellite-layer" style="margin-right:1rem;">添加</button>
+      <button class="btn" id="remove-satellite-layer">删除</button>
+    </div>
+
+   
+
+
+
+</div>
+<script> 
+   // 构造官方卫星、路网图层
+    var satelliteLayer = new AMap.TileLayer.Satellite();
+   // var roadNetLayer =  new AMap.TileLayer.RoadNet();
+
+    //批量添加图层
+    //map.add([satelliteLayer, roadNetLayer]);
+
+    //事件绑定
+
+    document.querySelector("#add-marker").onclick = function() {
+        map.add(marker);
+        map.setFitView();
+    }
+    document.querySelector("#remove-marker").onclick = function() {
+        map.remove(marker);
+        map.setFitView();
+    }
+
+
+    document.querySelector("#add-satellite-layer").onclick = function() {
+      map.add(satelliteLayer);
+    }
+
+    document.querySelector("#remove-satellite-layer").onclick = function() {
+      map.remove(satelliteLayer);
+    }
+
+</script>
+
+<footer-component></footer-component>
+
+</body>
+</html>

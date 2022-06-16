@@ -1,0 +1,3236 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>所有点位</title>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=S6irbCcGsCD2Tf1NjnRsldZmfvHiZ8rj"></script>
+<script src="components/header.js" type="text/javascript" defer></script>
+<script src="components/footer.js" type="text/javascript" defer></script>
+</head>
+<body>
+      <header-component></header-component>
+      <main>
+        <!-- Your page's content -->
+
+
+        <div class="content" id="container">
+          <script type="text/javascript">
+          var map = new BMap.Map("container", {mapType:BMAP_SATELLITE_MAP});
+          //var point = new BMap.Point(116.3, 39.8);
+          //map.centerAndZoom(point, 10);
+          map.addControl(new BMap.NavigationControl());
+          map.addControl(new BMap.MapTypeControl());
+          var marker = new BMap.Marker(point);
+          map.addOverlay(marker);
+          
+          </script>
+          
+          <script>
+              var map = new BMapGL.Map('container'); // 创建Map实例
+              var centerpoint = new BMap.Point(116.3,40.2);
+              map.centerAndZoom(centerpoint, 10); // 初始化地图,设置中心点坐标和地图级别
+              map.enableScrollWheelZoom(true); // 开启鼠标滚轮缩放
+          
+
+
+              
+
+     // 创建点标记 五环
+    var marker1 = new BMapGL.Marker(new BMapGL.Point(116.375973,39.783052));
+    var marker2 = new BMapGL.Marker(new BMapGL.Point(116.324388,39.787228));
+    var marker3 = new BMapGL.Marker(new BMapGL.Point(116.301902,39.78382));
+    var marker4 = new BMapGL.Marker(new BMapGL.Point(116.22737,39.86233));
+    var marker5= new BMapGL.Marker(new BMapGL.Point(116.243283,39.839038));
+    var marker6= new BMapGL.Marker(new BMapGL.Point(116.325222,39.786184));   
+    var marker7= new BMapGL.Marker(new BMapGL.Point(116.349819,39.783822));   
+    var marker8= new BMapGL.Marker(new BMapGL.Point(116.217776,39.947855));   
+    var marker9= new BMapGL.Marker(new BMapGL.Point(116.222496,39.959569));      
+    var marker10 = new BMapGL.Marker(new BMapGL.Point(116.223965,39.961769));
+    var marker11 = new BMapGL.Marker(new BMapGL.Point(116.263407,40.009319));
+    var marker12= new BMapGL.Marker(new BMapGL.Point(116.289556,40.019475));    
+    var marker13= new BMapGL.Marker(new BMapGL.Point(116.357023,40.029202));    
+
+    //六环
+    var marker14= new BMapGL.Marker(new BMapGL.Point(116.333478,39.704918));      
+    var marker15= new BMapGL.Marker(new BMapGL.Point(116.373871,39.714763));     
+    var marker16= new BMapGL.Marker(new BMapGL.Point(116.420262,39.727169));        
+    var marker17= new BMapGL.Marker(new BMapGL.Point(116.447923,39.72861));            
+    var marker18= new BMapGL.Marker(new BMapGL.Point(116.248216,40.180341));        
+    var marker19= new BMapGL.Marker(new BMapGL.Point(116.249648,40.178488));  
+
+  // 创建点标记 京藏3处
+    var marker20= new BMapGL.Marker(new BMapGL.Point(116.012768,40.460255));
+    var marker21= new BMapGL.Marker(new BMapGL.Point(115.959617,40.379433));
+    var marker22= new BMapGL.Marker(new BMapGL.Point(115.91409,40.36521));
+
+ // 创建点标记 京新
+
+    var marker23= new BMapGL.Marker(new BMapGL.Point(116.334566,40.025936));
+    var marker24= new BMapGL.Marker(new BMapGL.Point(116.329773,40.035177));
+    var marker25= new BMapGL.Marker(new BMapGL.Point(116.264029,40.106999));
+    var marker26= new BMapGL.Marker(new BMapGL.Point(116.220184,40.174422));
+    var marker27= new BMapGL.Marker(new BMapGL.Point(116.217909,40.200453));
+    var marker28= new BMapGL.Marker(new BMapGL.Point(116.213674,40.211584));
+    var marker29= new BMapGL.Marker(new BMapGL.Point(116.216831,40.23741));
+    var marker30= new BMapGL.Marker(new BMapGL.Point(116.187915,40.252162));
+    var marker31= new BMapGL.Marker(new BMapGL.Point(116.188521,40.266089));
+    var marker32= new BMapGL.Marker(new BMapGL.Point(116.187696,40.266549));
+    var marker33= new BMapGL.Marker(new BMapGL.Point(116.187931,40.252217));
+    var marker34= new BMapGL.Marker(new BMapGL.Point(116.213687,40.22995));
+    var marker35= new BMapGL.Marker(new BMapGL.Point(116.218459,40.17598));
+    var marker36= new BMapGL.Marker(new BMapGL.Point(116.233966,40.147835));
+    var marker37= new BMapGL.Marker(new BMapGL.Point(116.308036,40.064843));
+    var marker38= new BMapGL.Marker(new BMapGL.Point(116.333564,40.025656));
+
+
+
+  //京昆
+    var marker39= new BMapGL.Marker(new BMapGL.Point(116.109634,39.776757));
+    var marker40= new BMapGL.Marker(new BMapGL.Point(116.053961,39.76637));
+    var marker41= new BMapGL.Marker(new BMapGL.Point(116.034719,39.728867));
+    var marker42= new BMapGL.Marker(new BMapGL.Point(116.039435,39.709838));
+    var marker43= new BMapGL.Marker(new BMapGL.Point(116.047192,39.687839));
+    var marker44= new BMapGL.Marker(new BMapGL.Point(115.948208,39.631138));
+    var marker45= new BMapGL.Marker(new BMapGL.Point(115.884729,39.621559));
+    var marker46= new BMapGL.Marker(new BMapGL.Point(115.763874,39.561041));
+    var marker47= new BMapGL.Marker(new BMapGL.Point(115.753983,39.53728));
+    var marker48= new BMapGL.Marker(new BMapGL.Point(115.868043,39.602524));
+    var marker49= new BMapGL.Marker(new BMapGL.Point(115.932407,39.632496));
+    var marker50= new BMapGL.Marker(new BMapGL.Point(115.978131,39.627203));
+    var marker51= new BMapGL.Marker(new BMapGL.Point(116.038456,39.713321));
+    var marker52= new BMapGL.Marker(new BMapGL.Point(116.035892,39.727515));
+    var marker53= new BMapGL.Marker(new BMapGL.Point(116.057536,39.766397));
+    var marker54= new BMapGL.Marker(new BMapGL.Point(115.755133,39.539694));
+
+
+
+//京港澳55-74
+    var marker55= new BMapGL.Marker(new BMapGL.Point(116.272394,39.876106));
+    var marker56= new BMapGL.Marker(new BMapGL.Point(116.246091,39.864458));
+    var marker57= new BMapGL.Marker(new BMapGL.Point(116.214125,39.81993));
+    var marker58= new BMapGL.Marker(new BMapGL.Point(116.159872,39.770945));
+    var marker59= new BMapGL.Marker(new BMapGL.Point(116.177636,39.78738));
+    var marker60= new BMapGL.Marker(new BMapGL.Point(116.15979,39.771217));
+    var marker61= new BMapGL.Marker(new BMapGL.Point(116.144609,39.758589));
+    var marker62= new BMapGL.Marker(new BMapGL.Point(116.119474,39.737352));
+    var marker63= new BMapGL.Marker(new BMapGL.Point(116.096552,39.688439));
+    var marker64= new BMapGL.Marker(new BMapGL.Point(116.050392,39.588493));
+    var marker65= new BMapGL.Marker(new BMapGL.Point(116.059263,39.595397));
+    var marker66= new BMapGL.Marker(new BMapGL.Point(116.087699,39.634205));
+    var marker67= new BMapGL.Marker(new BMapGL.Point(116.113085,39.704307));
+    var marker68= new BMapGL.Marker(new BMapGL.Point(116.157612,39.767127));
+    var marker69= new BMapGL.Marker(new BMapGL.Point(116.163888,39.772945));
+    var marker70= new BMapGL.Marker(new BMapGL.Point(116.186561,39.789195));
+    var marker71= new BMapGL.Marker(new BMapGL.Point(116.186565,39.789338));
+    var marker72= new BMapGL.Marker(new BMapGL.Point(116.209679,39.810765));
+    var marker73= new BMapGL.Marker(new BMapGL.Point(116.247753,39.864347));
+    var marker74= new BMapGL.Marker(new BMapGL.Point(116.27075,39.87301));
+
+
+
+//京开
+   var marker75= new BMapGL.Marker(new BMapGL.Point(116.351526,39.814483));
+   var marker76= new BMapGL.Marker(new BMapGL.Point(116.348234,39.772083));
+   var marker77= new BMapGL.Marker(new BMapGL.Point(116.348005,39.775397));
+   var marker78= new BMapGL.Marker(new BMapGL.Point(116.351105,39.726389));
+   var marker79= new BMapGL.Marker(new BMapGL.Point(116.292985,39.489761));
+   var marker80= new BMapGL.Marker(new BMapGL.Point(116.292985,39.489961));
+   var marker81= new BMapGL.Marker(new BMapGL.Point(116.334581,39.610976));
+   var marker82= new BMapGL.Marker(new BMapGL.Point(116.331135,39.663488));
+   var marker83= new BMapGL.Marker(new BMapGL.Point(116.332194,39.679471));
+   var marker84= new BMapGL.Marker(new BMapGL.Point(116.336321,39.702788));
+   var marker85= new BMapGL.Marker(new BMapGL.Point(116.351291,39.723219));
+   var marker86= new BMapGL.Marker(new BMapGL.Point(116.353281,39.731903));
+   var marker87= new BMapGL.Marker(new BMapGL.Point(116.35294,39.740139));
+   var marker88= new BMapGL.Marker(new BMapGL.Point(116.348742,39.778403));
+
+//机场南北线89~107
+
+   var marker89= new BMapGL.Marker(new BMapGL.Point(116.615469,40.033996));
+   var marker90= new BMapGL.Marker(new BMapGL.Point(116.630476,40.027791));
+   var marker91= new BMapGL.Marker(new BMapGL.Point(116.641638,40.028081));
+   var marker92= new BMapGL.Marker(new BMapGL.Point(116.66771,40.041881));
+   var marker93= new BMapGL.Marker(new BMapGL.Point(116.629933,40.029121));
+   var marker94= new BMapGL.Marker(new BMapGL.Point(116.614993,40.035503));
+   var marker95= new BMapGL.Marker(new BMapGL.Point(116.601212,40.041637));
+   var marker96= new BMapGL.Marker(new BMapGL.Point(116.490511,40.121735));
+   var marker97= new BMapGL.Marker(new BMapGL.Point(116.508333,40.123315));
+   var marker98= new BMapGL.Marker(new BMapGL.Point(116.520766,40.126287));
+   var marker99= new BMapGL.Marker(new BMapGL.Point(116.564923,40.128936));
+   var marker100= new BMapGL.Marker(new BMapGL.Point(116.586783,40.127273));
+   var marker101= new BMapGL.Marker(new BMapGL.Point(116.590978,40.125376));
+   var marker102= new BMapGL.Marker(new BMapGL.Point(116.573057,40.128418));
+   var marker103= new BMapGL.Marker(new BMapGL.Point(116.556739,40.129547));
+   var marker104= new BMapGL.Marker(new BMapGL.Point(116.535719,40.128176));
+   var marker105= new BMapGL.Marker(new BMapGL.Point(116.538212,40.127878));
+   var marker106= new BMapGL.Marker(new BMapGL.Point(116.51835,40.126501));
+   var marker107= new BMapGL.Marker(new BMapGL.Point(116.490386,40.122625));
+
+
+   //京承108~121
+  var marker108= new BMapGL.Marker(new BMapGL.Point(116.452203,39.996933));
+  var marker109= new BMapGL.Marker(new BMapGL.Point(116.456667,40.006346));
+  var marker110= new BMapGL.Marker(new BMapGL.Point(116.46066,40.014038));
+  var marker111= new BMapGL.Marker(new BMapGL.Point(116.460067,40.016494));
+  var marker112= new BMapGL.Marker(new BMapGL.Point(116.463369,40.020956));
+  var marker113= new BMapGL.Marker(new BMapGL.Point(116.462151,40.023135));
+  var marker114= new BMapGL.Marker(new BMapGL.Point(116.480104,40.040292));
+  var marker115= new BMapGL.Marker(new BMapGL.Point(116.480567,40.042063));
+  var marker116= new BMapGL.Marker(new BMapGL.Point(116.489523,40.065076));
+  var marker117= new BMapGL.Marker(new BMapGL.Point(116.488274,40.066919));
+  var marker118= new BMapGL.Marker(new BMapGL.Point(116.488333,40.097695));
+  var marker119= new BMapGL.Marker(new BMapGL.Point(116.487385,40.101317));
+  var marker120= new BMapGL.Marker(new BMapGL.Point(116.491822,40.160427));
+  var marker121= new BMapGL.Marker(new BMapGL.Point(116.490906,40.161623));
+  
+
+
+    
+  ///四环
+    var marker122= new BMapGL.Marker(new BMapGL.Point(116.480647,39.97347));  
+    var marker123= new BMapGL.Marker(new BMapGL.Point(116.485839,39.971285));    
+    var marker124= new BMapGL.Marker(new BMapGL.Point(116.493564,39.963944));    
+    var marker125= new BMapGL.Marker(new BMapGL.Point(116.495702,39.957791));  
+    var marker126= new BMapGL.Marker(new BMapGL.Point(116.496949,39.940062));    
+    var marker127= new BMapGL.Marker(new BMapGL.Point(116.495926,39.930576));    
+    var marker128= new BMapGL.Marker(new BMapGL.Point(116.494044,39.872973));    
+    var marker129= new BMapGL.Marker(new BMapGL.Point(116.491852,39.858636));    
+    var marker130= new BMapGL.Marker(new BMapGL.Point(116.491821,39.854069));
+    var marker131= new BMapGL.Marker(new BMapGL.Point(116.488113,39.850953));
+    var marker132= new BMapGL.Marker(new BMapGL.Point(116.483694,39.846698));
+    var marker133= new BMapGL.Marker(new BMapGL.Point(116.465901,39.838551));
+    var marker134= new BMapGL.Marker(new BMapGL.Point(116.45482,39.837269));
+    var marker135= new BMapGL.Marker(new BMapGL.Point(116.443479,39.838537));
+    var marker136= new BMapGL.Marker(new BMapGL.Point(116.410675,39.839039));
+    var marker137= new BMapGL.Marker(new BMapGL.Point(116.406749,39.83808));
+    var marker138= new BMapGL.Marker(new BMapGL.Point(116.371851,39.837475));
+    var marker139= new BMapGL.Marker(new BMapGL.Point(116.352987,39.835996));
+    var marker140= new BMapGL.Marker(new BMapGL.Point(116.351905,39.837052));
+    var marker141= new BMapGL.Marker(new BMapGL.Point(116.331351,39.835959));
+    var marker142= new BMapGL.Marker(new BMapGL.Point(116.31679,39.836977));
+    var marker143= new BMapGL.Marker(new BMapGL.Point(116.28614,39.88137));
+    var marker144= new BMapGL.Marker(new BMapGL.Point(116.282843,39.882034));
+    var marker145= new BMapGL.Marker(new BMapGL.Point(116.282495,39.889011));
+    var marker146= new BMapGL.Marker(new BMapGL.Point(116.280073,39.952897));
+    var marker147= new BMapGL.Marker(new BMapGL.Point(116.28068,39.970568));
+    var marker148= new BMapGL.Marker(new BMapGL.Point(116.284233,39.977169));
+    var marker149= new BMapGL.Marker(new BMapGL.Point(116.303493,39.990242));
+
+
+
+
+    //北五环
+    var marker150= new BMapGL.Marker(new BMapGL.Point(116.475554,40.02122));
+    var marker151= new BMapGL.Marker(new BMapGL.Point(116.450537,40.025955));
+    var marker152= new BMapGL.Marker(new BMapGL.Point(116.367389,40.028549));
+    var marker153 = new BMapGL.Marker(new BMapGL.Point(116.470084,40.020612));
+    var marker154= new BMapGL.Marker(new BMapGL.Point(116.478591,40.020498));
+    var marker155= new BMapGL.Marker(new BMapGL.Point(116.487485,40.020224));
+    var marker156= new BMapGL.Marker(new BMapGL.Point(116.50174,40.009458));
+    var marker157= new BMapGL.Marker(new BMapGL.Point(116.511369,40.000988));
+    var marker158= new BMapGL.Marker(new BMapGL.Point(116.534991,39.965226));
+    var marker159= new BMapGL.Marker(new BMapGL.Point(116.536321,39.964752));
+    var marker160= new BMapGL.Marker(new BMapGL.Point(116.54886,39.948496));
+    var marker161= new BMapGL.Marker(new BMapGL.Point(116.550155,39.916262));
+    var marker162= new BMapGL.Marker(new BMapGL.Point(116.551426,39.914847));   
+    var marker163= new BMapGL.Marker(new BMapGL.Point(116.552747,39.902356));
+    var marker164= new BMapGL.Marker(new BMapGL.Point(116.555124,39.873036));
+    var marker165= new BMapGL.Marker(new BMapGL.Point(116.553911,39.893902));
+    var marker166= new BMapGL.Marker(new BMapGL.Point(116.532815,39.839771));
+    var marker167= new BMapGL.Marker(new BMapGL.Point(116.524725,39.833521));
+
+
+
+
+
+
+//南六环 东六环 168~195
+    var marker168= new BMapGL.Marker(new BMapGL.Point(116.563575,39.752164));
+    var marker169= new BMapGL.Marker(new BMapGL.Point(116.581381,39.759037));
+    var marker170= new BMapGL.Marker(new BMapGL.Point(116.641741,39.806374));
+    var marker171= new BMapGL.Marker(new BMapGL.Point(116.654075,39.815768));
+    var marker172= new BMapGL.Marker(new BMapGL.Point(116.685722,39.841472));
+    var marker173= new BMapGL.Marker(new BMapGL.Point(116.717295,39.891185));
+    var marker174= new BMapGL.Marker(new BMapGL.Point(116.714655,39.933003));
+    var marker175= new BMapGL.Marker(new BMapGL.Point(116.710559,39.957544));
+    var marker176= new BMapGL.Marker(new BMapGL.Point(116.716511,39.992695));
+    var marker177= new BMapGL.Marker(new BMapGL.Point(116.641423,40.085258));
+    var marker178= new BMapGL.Marker(new BMapGL.Point(116.630437,40.123305));
+    var marker179= new BMapGL.Marker(new BMapGL.Point(116.603887,40.149382));
+    var marker180= new BMapGL.Marker(new BMapGL.Point(116.429192,40.164634));
+    var marker181= new BMapGL.Marker(new BMapGL.Point(116.409329,40.164916));
+    var marker182= new BMapGL.Marker(new BMapGL.Point(116.342488,40.176983));
+    var marker183= new BMapGL.Marker(new BMapGL.Point(116.295843,40.182974));
+    var marker184= new BMapGL.Marker(new BMapGL.Point(116.338347,40.177352));
+    var marker185= new BMapGL.Marker(new BMapGL.Point(116.406881,40.164665));
+    var marker186= new BMapGL.Marker(new BMapGL.Point(116.414548,40.163946));
+    var marker187= new BMapGL.Marker(new BMapGL.Point(116.5595,40.150933));
+    var marker188= new BMapGL.Marker(new BMapGL.Point(116.603016,40.147421));
+    var marker189= new BMapGL.Marker(new BMapGL.Point(116.685512,40.016389));
+    var marker190= new BMapGL.Marker(new BMapGL.Point(116.690784,39.847519));
+    var marker191= new BMapGL.Marker(new BMapGL.Point(116.644727,39.809742));
+    var marker192= new BMapGL.Marker(new BMapGL.Point(116.588352,39.762025));
+    var marker193= new BMapGL.Marker(new BMapGL.Point(116.551621,39.752624));
+    var marker194= new BMapGL.Marker(new BMapGL.Point(116.520157,39.74596));
+    var marker195= new BMapGL.Marker(new BMapGL.Point(116.490132,39.736223));
+  
+
+//196~207 京平高速
+    var marker196= new BMapGL.Marker(new BMapGL.Point(116.934062,40.06894));
+    var marker197= new BMapGL.Marker(new BMapGL.Point(117.015055,40.072938));
+    var marker198= new BMapGL.Marker(new BMapGL.Point(117.088474,40.093441));
+    var marker199= new BMapGL.Marker(new BMapGL.Point(117.107532,40.098379));
+    var marker200= new BMapGL.Marker(new BMapGL.Point(117.197447,40.13792));
+    var marker201= new BMapGL.Marker(new BMapGL.Point(117.194507,40.138568));
+    var marker202= new BMapGL.Marker(new BMapGL.Point(117.172472,40.133535));
+    var marker203= new BMapGL.Marker(new BMapGL.Point(117.149003,40.123777));
+    var marker204= new BMapGL.Marker(new BMapGL.Point(117.042159,40.08396));
+    var marker205= new BMapGL.Marker(new BMapGL.Point(116.98731,40.069758));
+    var marker206= new BMapGL.Marker(new BMapGL.Point(116.933361,40.070217));
+    var marker207= new BMapGL.Marker(new BMapGL.Point(116.872649,40.064372));
+
+//208~225 京沪高速
+
+    var marker208= new BMapGL.Marker(new BMapGL.Point(116.566822,39.769086));
+    var marker209= new BMapGL.Marker(new BMapGL.Point(116.505427,39.830463));
+    var marker210= new BMapGL.Marker(new BMapGL.Point(116.517159,39.822049));
+    var marker211= new BMapGL.Marker(new BMapGL.Point(116.541961,39.79623));
+    var marker212= new BMapGL.Marker(new BMapGL.Point(116.574848,39.75838));
+    var marker213= new BMapGL.Marker(new BMapGL.Point(116.586939,39.748499));
+    var marker214= new BMapGL.Marker(new BMapGL.Point(116.626748,39.714731));
+    var marker215= new BMapGL.Marker(new BMapGL.Point(116.684017,39.668393));
+    var marker216= new BMapGL.Marker(new BMapGL.Point(116.554931,39.78578));
+    var marker217= new BMapGL.Marker(new BMapGL.Point(116.554976,39.784421));
+    var marker218= new BMapGL.Marker(new BMapGL.Point(116.686806,39.666935));
+    var marker219= new BMapGL.Marker(new BMapGL.Point(116.607097,39.736751));
+    var marker220= new BMapGL.Marker(new BMapGL.Point(116.578388,39.75585));
+    var marker221= new BMapGL.Marker(new BMapGL.Point(116.567882,39.768667));
+    var marker222= new BMapGL.Marker(new BMapGL.Point(116.53446,39.807563));
+    var marker223= new BMapGL.Marker(new BMapGL.Point(116.526039,39.816898));
+    var marker224= new BMapGL.Marker(new BMapGL.Point(116.517231,39.822023));
+    var marker225= new BMapGL.Marker(new BMapGL.Point(116.493817,39.840161));
+
+
+
+
+
+
+
+
+
+
+
+
+//226~228 南五环
+
+
+    var marker226= new BMapGL.Marker(new BMapGL.Point(116.458371,39.796258));
+    var marker227= new BMapGL.Marker(new BMapGL.Point(116.556677,39.86146));
+    var marker228= new BMapGL.Marker(new BMapGL.Point(116.551192,39.852009));
+
+//229~243 京哈高速
+
+    var marker229= new BMapGL.Marker(new BMapGL.Point(116.506808,39.876823));
+    var marker230= new BMapGL.Marker(new BMapGL.Point(116.583829,39.873006));
+    var marker231= new BMapGL.Marker(new BMapGL.Point(116.707369,39.842096));
+    var marker232= new BMapGL.Marker(new BMapGL.Point(116.744648,39.832383));
+    var marker233= new BMapGL.Marker(new BMapGL.Point(116.801723,39.811842));
+    var marker234= new BMapGL.Marker(new BMapGL.Point(116.842667,39.808704));
+    var marker235= new BMapGL.Marker(new BMapGL.Point(116.938795,39.806015));
+    var marker236= new BMapGL.Marker(new BMapGL.Point(116.864397,39.810124));
+    var marker237= new BMapGL.Marker(new BMapGL.Point(116.851354,39.810505));
+    var marker238= new BMapGL.Marker(new BMapGL.Point(116.837902,39.809067));
+    var marker239= new BMapGL.Marker(new BMapGL.Point(116.750977,39.831022));
+    var marker240= new BMapGL.Marker(new BMapGL.Point(116.67772,39.846885));
+    var marker241= new BMapGL.Marker(new BMapGL.Point(116.589637,39.873688));
+    var marker242= new BMapGL.Marker(new BMapGL.Point(116.583843,39.874013));
+    var marker243= new BMapGL.Marker(new BMapGL.Point(116.511794,39.87737));
+
+
+//244~245 南五环
+
+    var marker244= new BMapGL.Marker(new BMapGL.Point(116.482897,39.811401));
+    var marker245= new BMapGL.Marker(new BMapGL.Point(116.48123,39.811277));
+  
+    
+//246~256 京津高速速
+    var marker246= new BMapGL.Marker(new BMapGL.Point(116.593047,39.832061));
+    var marker247= new BMapGL.Marker(new BMapGL.Point(116.59135,39.832123));
+    var marker248= new BMapGL.Marker(new BMapGL.Point(116.637437,39.801881));
+    var marker249= new BMapGL.Marker(new BMapGL.Point(116.636161,39.801971));
+    var marker250= new BMapGL.Marker(new BMapGL.Point(116.608513,39.821216));
+    var marker251= new BMapGL.Marker(new BMapGL.Point(116.817827,39.648442));
+    var marker252= new BMapGL.Marker(new BMapGL.Point(116.822489,39.646866));
+    var marker253= new BMapGL.Marker(new BMapGL.Point(116.789722,39.670564));
+    var marker254= new BMapGL.Marker(new BMapGL.Point(116.768616,39.688393));
+    var marker255= new BMapGL.Marker(new BMapGL.Point(116.705611,39.745069));
+    var marker256= new BMapGL.Marker(new BMapGL.Point(116.689553,39.757259));
+
+
+//257~258 通燕高速
+
+    var marker257= new BMapGL.Marker(new BMapGL.Point(116.720497,39.928878));
+    var marker258= new BMapGL.Marker(new BMapGL.Point(116.720214,39.929625));
+
+
+  
+
+
+
+
+
+
+    // 五环
+    map.addOverlay(marker1);    
+    map.addOverlay(marker2);
+    map.addOverlay(marker3);
+    map.addOverlay(marker4);
+    map.addOverlay(marker5);    
+    map.addOverlay(marker6);      
+    map.addOverlay(marker7);
+    map.addOverlay(marker8);
+    map.addOverlay(marker9);
+    map.addOverlay(marker10);
+    map.addOverlay(marker11);
+    map.addOverlay(marker12);
+    map.addOverlay(marker13);
+
+
+    //六环
+    map.addOverlay(marker14);
+    map.addOverlay(marker15);
+    map.addOverlay(marker16);
+    map.addOverlay(marker17);
+    map.addOverlay(marker18);
+    map.addOverlay(marker19);
+
+
+    //京藏3处
+    map.addOverlay(marker20);
+    map.addOverlay(marker21);
+    map.addOverlay(marker22);
+
+   //京新
+
+    map.addOverlay(marker23);
+    map.addOverlay(marker24);
+    map.addOverlay(marker25);
+    map.addOverlay(marker26);
+    map.addOverlay(marker27);
+    map.addOverlay(marker28);
+    map.addOverlay(marker29);
+    map.addOverlay(marker30);
+    map.addOverlay(marker31);
+    map.addOverlay(marker32);
+    map.addOverlay(marker33);
+    map.addOverlay(marker34);
+    map.addOverlay(marker35);
+    map.addOverlay(marker36);
+    map.addOverlay(marker37);
+    map.addOverlay(marker38);
+
+
+ //京昆
+   map.addOverlay(marker39);
+   map.addOverlay(marker40);
+   map.addOverlay(marker41);
+   map.addOverlay(marker42);
+   map.addOverlay(marker43);
+   map.addOverlay(marker44);
+   map.addOverlay(marker45);
+   map.addOverlay(marker46);
+   map.addOverlay(marker47);
+   map.addOverlay(marker48);
+   map.addOverlay(marker49);
+   map.addOverlay(marker50);
+   map.addOverlay(marker51);
+   map.addOverlay(marker52);
+   map.addOverlay(marker53);
+   map.addOverlay(marker54);
+
+//京港澳55-74
+   map.addOverlay(marker55);
+   map.addOverlay(marker56);
+   map.addOverlay(marker57);
+   map.addOverlay(marker58);
+   map.addOverlay(marker59);
+   map.addOverlay(marker60);
+   map.addOverlay(marker61);
+   map.addOverlay(marker62);
+   map.addOverlay(marker63);
+   map.addOverlay(marker64);
+   map.addOverlay(marker65);
+   map.addOverlay(marker66);
+   map.addOverlay(marker67);
+   map.addOverlay(marker68);
+   map.addOverlay(marker69);
+   map.addOverlay(marker70);
+   map.addOverlay(marker71);
+   map.addOverlay(marker72);
+   map.addOverlay(marker73);
+   map.addOverlay(marker74);
+
+
+//京开75~88
+   map.addOverlay(marker75);
+   map.addOverlay(marker76);
+   map.addOverlay(marker77);
+   map.addOverlay(marker78);
+   map.addOverlay(marker79);
+   map.addOverlay(marker80);
+   map.addOverlay(marker81);
+   map.addOverlay(marker82);
+   map.addOverlay(marker83);
+   map.addOverlay(marker84);
+   map.addOverlay(marker85);
+   map.addOverlay(marker86);
+   map.addOverlay(marker87);
+   map.addOverlay(marker88);
+
+//机场南北线89~107
+
+   map.addOverlay(marker89);
+   map.addOverlay(marker90);
+   map.addOverlay(marker91);
+   map.addOverlay(marker92);
+   map.addOverlay(marker93);
+   map.addOverlay(marker94);
+   map.addOverlay(marker95);
+   map.addOverlay(marker96);
+   map.addOverlay(marker97);
+   map.addOverlay(marker98);
+   map.addOverlay(marker99);
+   map.addOverlay(marker100);	
+   map.addOverlay(marker101);
+   map.addOverlay(marker102);
+   map.addOverlay(marker103);
+   map.addOverlay(marker104);
+   map.addOverlay(marker105);
+   map.addOverlay(marker106);
+   map.addOverlay(marker107);
+
+//京承108~121
+   map.addOverlay(marker108);
+   map.addOverlay(marker109);
+   map.addOverlay(marker110);
+   map.addOverlay(marker111);
+   map.addOverlay(marker112);
+   map.addOverlay(marker113);
+   map.addOverlay(marker114);
+   map.addOverlay(marker115);
+   map.addOverlay(marker116);
+   map.addOverlay(marker117);
+   map.addOverlay(marker118);
+   map.addOverlay(marker119);
+   map.addOverlay(marker120);
+   map.addOverlay(marker121);
+
+
+
+
+///四环122-149
+ map.addOverlay(marker122);
+ map.addOverlay(marker123);
+ map.addOverlay(marker124);
+ map.addOverlay(marker125);
+ map.addOverlay(marker126);
+ map.addOverlay(marker127);
+ map.addOverlay(marker128);
+ map.addOverlay(marker129);
+ map.addOverlay(marker130);
+ map.addOverlay(marker131);
+ map.addOverlay(marker132);
+ map.addOverlay(marker133);
+ map.addOverlay(marker134);
+ map.addOverlay(marker135);
+ map.addOverlay(marker136);
+ map.addOverlay(marker137);
+ map.addOverlay(marker138);
+ map.addOverlay(marker139);
+ map.addOverlay(marker140);
+ map.addOverlay(marker141);
+ map.addOverlay(marker142);
+ map.addOverlay(marker143);
+ map.addOverlay(marker144);
+ map.addOverlay(marker145);
+ map.addOverlay(marker146);
+ map.addOverlay(marker147);
+ map.addOverlay(marker148);
+ map.addOverlay(marker149);
+
+
+
+ //五环
+ map.addOverlay(marker150);
+ map.addOverlay(marker151);
+ map.addOverlay(marker152);
+ map.addOverlay(marker153);
+ map.addOverlay(marker154);
+ map.addOverlay(marker155);
+ map.addOverlay(marker156);
+ map.addOverlay(marker157);
+ map.addOverlay(marker158);
+ map.addOverlay(marker159);
+ map.addOverlay(marker160);
+ map.addOverlay(marker161);
+ map.addOverlay(marker162);
+ map.addOverlay(marker163);
+ map.addOverlay(marker164);
+ map.addOverlay(marker165);
+ map.addOverlay(marker166);
+ map.addOverlay(marker167);
+
+
+
+ //南六环 东六环 168~195
+ map.addOverlay(marker168);
+ map.addOverlay(marker169);
+ map.addOverlay(marker170);
+ map.addOverlay(marker171);
+ map.addOverlay(marker172);
+ map.addOverlay(marker173);
+ map.addOverlay(marker174); 
+ map.addOverlay(marker175);
+ map.addOverlay(marker176);
+ map.addOverlay(marker177);
+ map.addOverlay(marker178);
+ map.addOverlay(marker179);
+ map.addOverlay(marker180);
+ map.addOverlay(marker181);
+ map.addOverlay(marker182);
+ map.addOverlay(marker183);
+ map.addOverlay(marker184);
+ map.addOverlay(marker185);
+ map.addOverlay(marker186);
+ map.addOverlay(marker187);
+ map.addOverlay(marker188);
+ map.addOverlay(marker189);
+ map.addOverlay(marker190);
+ map.addOverlay(marker191);
+ map.addOverlay(marker192);
+ map.addOverlay(marker193);
+ map.addOverlay(marker194);
+ map.addOverlay(marker195);
+
+//196~207 京平高速
+ map.addOverlay(marker196);
+ map.addOverlay(marker197);
+ map.addOverlay(marker198);
+ map.addOverlay(marker199);
+ map.addOverlay(marker200);
+ map.addOverlay(marker201);
+ map.addOverlay(marker202);
+ map.addOverlay(marker203);
+ map.addOverlay(marker204);
+ map.addOverlay(marker205);
+ map.addOverlay(marker206);
+ map.addOverlay(marker207);
+
+//208~225 京沪高速
+map.addOverlay(marker208);
+map.addOverlay(marker209);
+map.addOverlay(marker210);
+map.addOverlay(marker211);
+map.addOverlay(marker212);
+map.addOverlay(marker213);
+map.addOverlay(marker214);
+map.addOverlay(marker215);
+map.addOverlay(marker216);
+map.addOverlay(marker217);
+map.addOverlay(marker218);
+map.addOverlay(marker219);
+map.addOverlay(marker220);
+map.addOverlay(marker221);
+map.addOverlay(marker222);
+map.addOverlay(marker223);
+map.addOverlay(marker224);
+map.addOverlay(marker225);
+
+
+
+//226~228 南五环
+
+
+ map.addOverlay(marker226);
+ map.addOverlay(marker227);
+ map.addOverlay(marker228);
+
+//229~243 京哈高速
+
+ map.addOverlay(marker229);
+ map.addOverlay(marker230);
+ map.addOverlay(marker231);
+ map.addOverlay(marker232);
+ map.addOverlay(marker233);
+ map.addOverlay(marker234);
+ map.addOverlay(marker235);
+ map.addOverlay(marker236);
+ map.addOverlay(marker237);
+ map.addOverlay(marker238);
+ map.addOverlay(marker239);
+ map.addOverlay(marker240);
+ map.addOverlay(marker241);
+ map.addOverlay(marker242);
+ map.addOverlay(marker243);
+
+
+
+//244~245 南五环
+
+ map.addOverlay(marker244);
+ map.addOverlay(marker245);
+
+
+//246~256 京津高速速
+
+    map.addOverlay(marker246);
+    map.addOverlay(marker247);
+    map.addOverlay(marker248);
+    map.addOverlay(marker249);
+    map.addOverlay(marker250);
+    map.addOverlay(marker251);
+    map.addOverlay(marker252);
+    map.addOverlay(marker253);
+    map.addOverlay(marker254);
+    map.addOverlay(marker255);
+    map.addOverlay(marker256);
+    
+
+
+//257~258 通燕高速
+
+    map.addOverlay(marker257);
+    map.addOverlay(marker258);
+
+
+
+
+
+
+
+
+ 
+    
+    //创建标注1
+    var point1 = new BMapGL.Point(116.375973,39.783052);
+    var content1 = "1(南五环路—12-04)";
+    var label1 = new BMapGL.Label(content1, {       // 创建文本标注
+    position: point1,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label1);                        // 将标注添加到地图中
+
+
+
+
+
+    //创建标注2
+    var point = new BMapGL.Point(116.324388,39.787228);
+    var content2 = "2(南五环路—12-05)";
+    var label2 = new BMapGL.Label(content2, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label2);                        // 将标注添加到地图中
+
+    //创建标注3
+    var point = new BMapGL.Point(116.301902,39.78382);
+    var content3 = "3(南五环路—12-06)";
+    var label3 = new BMapGL.Label(content3, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label3);                        // 将标注添加到地图中
+
+    //创建标注4
+    var point = new BMapGL.Point(116.22737,39.86233);
+    var content4 = "4(南五环路—12-07)";
+    var label4 = new BMapGL.Label(content4, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label4);                        // 将标注添加到地图中
+
+
+    //创建标注5
+    var point = new BMapGL.Point(116.243283,39.839038);
+    var content5 = "5(南五环路—12-08)";
+    var label5 = new BMapGL.Label(content5, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label5);                        // 将标注添加到地图中
+
+
+    //创建标注6
+    var point = new BMapGL.Point(116.325222,39.786184);
+    var content6 = "6(南五环路—12-09)";
+    var label6 = new BMapGL.Label(content6, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label6);                        // 将标注添加到地图中
+
+   //创建标注7
+   var point = new BMapGL.Point(116.349819,39.783822);
+    var content7 = "7(南五环路—12-10)";
+    var label7 = new BMapGL.Label(content7, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label7);                        // 将标注添加到地图中
+
+
+  //创建标注8
+  var point = new BMapGL.Point(116.217776,39.947855);
+    var content8 = "8(西五环路—10-04)";
+    var label8 = new BMapGL.Label(content8, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label8);                        // 将标注添加到地图中
+
+  //创建标注9
+  var point = new BMapGL.Point(116.222496,39.959569);
+    var content9 = "9(西五环路—10-05)";
+    var label9 = new BMapGL.Label(content9, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label9);                        // 将标注添加到地图中
+    
+
+    //创建标注10
+    var point = new BMapGL.Point(116.223965,39.961769);
+    var content10 = "10(西五环路—10-06)";
+    var label10 = new BMapGL.Label(content10, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label10);                        // 将标注添加到地图中
+
+
+    //创建标注11
+    var point = new BMapGL.Point(116.263407,40.009319);
+    var content11 = "11(北五环路—10-08)";
+    var label11 = new BMapGL.Label(content11, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label11);                        // 将标注添加到地图中
+
+
+    //创建标注12
+    var point = new BMapGL.Point(116.289556,40.019475);
+    var content12 = "12(北五环路—10-09)";
+    var label12 = new BMapGL.Label(content12, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label12);                        // 将标注添加到地图中
+
+
+    //创建标注13
+    var point = new BMapGL.Point(116.357023,40.029202);
+    var content13 = "13(北五环路—10-10)";
+    var label13 = new BMapGL.Label(content13, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label13);                        // 将标注添加到地图中
+
+
+  //创建标注14
+    var point = new BMapGL.Point(116.333478,39.704918);
+    var content14 = "14(南六环路—19-09)";
+    var label14 = new BMapGL.Label(content14, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label14);                        // 将标注添加到地图中
+
+
+ //创建标注15
+    var point = new BMapGL.Point(116.373871,39.714763);
+    var content15 = "15(南六环路—19-10)";
+    var label15 = new BMapGL.Label(content15, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label15);                        // 将标注添加到地图中
+
+
+ //创建标注16
+    var point = new BMapGL.Point(116.420262,39.727169);
+    var content16 = "16(南六环路—19-11)";
+    var label16 = new BMapGL.Label(content16, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label16);                        // 将标注添加到地图中
+
+
+
+
+
+ //创建标注17
+    var point = new BMapGL.Point(116.447923,39.72861);
+    var content17 = "17(南六环路—19-12)";
+    var label17 = new BMapGL.Label(content17, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label17);                        // 将标注添加到地图中
+
+
+
+
+ //创建标注18
+    var point = new BMapGL.Point(116.248216,40.180341);
+    var content18 = "18(北六环路—18-01)";
+    var label18 = new BMapGL.Label(content18, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label18);                        // 将标注添加到地图中
+
+
+
+ //创建标注19
+    var point = new BMapGL.Point(116.249648,40.178488);
+    var content19 = "19(北六环路—18-02)";
+    var label19 = new BMapGL.Label(content19, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label19);                        // 将标注添加到地图中
+
+
+
+//创建标注京藏
+
+
+
+//创建标注20
+    var point = new BMapGL.Point(116.012768,40.460255);
+    var content20 = "20(京藏高速—08-02)";
+    var label20 = new BMapGL.Label(content20, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label20);                        // 将标注添加到地图中
+
+
+//创建标注21
+var point = new BMapGL.Point(115.959617,40.379433);
+    var content21 = "21(京藏高速—08-03)";
+    var label21 = new BMapGL.Label(content21, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label21);                        // 将标注添加到地图中
+
+
+   //创建标注21
+var point = new BMapGL.Point(115.959617,40.379433);
+    var content21 = "21(京藏高速—08-03)";
+    var label21 = new BMapGL.Label(content21, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label21);                        // 将标注添加到地图中
+ 
+
+
+    
+   //创建标注22
+    var point = new BMapGL.Point(115.91409,40.36521);
+    var content22 = "22(京藏高速—08-06)";
+    var label22 = new BMapGL.Label(content22, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label22);                        // 将标注添加到地图中    
+
+
+
+
+
+
+
+//京新高速
+//创建标注23
+    var point = new BMapGL.Point(116.334566,40.025936);
+    var content23 = "23(京新高速—19-01)";
+    var label23 = new BMapGL.Label(content23, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label23);                        // 将标注添加到地图中
+
+//创建标注24
+var point = new BMapGL.Point(116.329773,40.035177);
+    var content24 = "24(京新高速—19-02)";
+    var label24 = new BMapGL.Label(content24, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label24);                        // 将标注添加到地图中
+
+
+//创建标注25
+var point = new BMapGL.Point(116.264029,40.106999);
+    var content25 = "25(京新高速—19-05)";
+    var label25 = new BMapGL.Label(content25, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label25);                        // 将标注添加到地图中
+
+//创建标注26
+var point = new BMapGL.Point(116.220184,40.174422);
+    var content26 = "26(京新高速—19-06)";
+    var label26 = new BMapGL.Label(content26, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label26);                        // 将标注添加到地图中
+
+    //创建标注27
+var point = new BMapGL.Point(116.217909,40.200453);
+    var content27 = "27(京新高速—19-07)";
+    var label27 = new BMapGL.Label(content27, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label27);                        // 将标注添加到地图中
+
+
+ //创建标注28
+var point = new BMapGL.Point(116.213674,40.211584);
+    var content28 = "28(京新高速—19-08)";
+    var label28 = new BMapGL.Label(content28, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label28);                        // 将标注添加到地图中
+   
+//创建标注29
+var point = new BMapGL.Point(116.216831,40.23741);
+    var content29 = "29(京新高速—19-10)";
+    var label29 = new BMapGL.Label(content29, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label29);                        // 将标注添加到地图中
+
+    //创建标注30
+var point = new BMapGL.Point(116.187915,40.252162);
+    var content30 = "30(京新高速—19-11)";
+    var label30 = new BMapGL.Label(content30, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label30);                        // 将标注添加到地图中
+
+    //创建标注31
+var point = new BMapGL.Point(116.188521,40.266089);
+    var content31 = "31(京新高速—19-12)";
+    var label31 = new BMapGL.Label(content31, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label31);                        // 将标注添加到地图中
+
+    //创建标注32
+var point = new BMapGL.Point(116.187696,40.266549);
+    var content32 = "33(京新高速—19-13)";
+    var label32 = new BMapGL.Label(content32, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label32);                        // 将标注添加到地图中
+
+    //创建标注33
+var point = new BMapGL.Point(116.187931,40.252217);
+    var content33 = "33(京新高速—19-14)";
+    var label33 = new BMapGL.Label(content33, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label33);                        // 将标注添加到地图中
+
+    //创建标注34
+var point = new BMapGL.Point(116.213687,40.22995);
+    var content34 = "34(京新高速—19-15)";
+    var label34 = new BMapGL.Label(content34, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label34);                        // 将标注添加到地图中
+
+    //创建标注35
+var point = new BMapGL.Point(116.218459,40.17598);
+    var content35 = "35(京新高速—19-16)";
+    var label35 = new BMapGL.Label(content35, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label35);                        // 将标注添加到地图中
+
+    //创建标注36
+var point = new BMapGL.Point(116.233966,40.147835);
+    var content36 = "36(京新高速—19-17)";
+    var label36 = new BMapGL.Label(content36, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label36);                        // 将标注添加到地图中
+
+    //创建标注37
+var point = new BMapGL.Point(116.308036,40.064843);
+    var content37 = "37(京新高速—19-18)";
+    var label37 = new BMapGL.Label(content37, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label37);                        // 将标注添加到地图中
+
+
+    
+//创建标注38
+    var point = new BMapGL.Point(116.333564,40.025656);
+    var content38 = "38(京新高速—19-19)";
+    var label38 = new BMapGL.Label(content38, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label38);                        // 将标注添加到地图中
+
+
+
+//京昆39-54
+
+//创建标注39
+var point = new BMapGL.Point(116.109634,39.776757);
+    var content39 = "39(京昆高速—15-01)";
+    var label39 = new BMapGL.Label(content39, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label39);                        // 将标注添加到地图中
+    
+//创建标注40
+var point = new BMapGL.Point(116.053961,39.76637);
+    var content40 = "40(京昆高速—15-02)";
+    var label40 = new BMapGL.Label(content40, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label40);                        // 将标注添加到地图中
+
+//创建标注41
+var point = new BMapGL.Point(116.034719,39.728867);
+    var content41 = "41(京昆高速—15-03)";
+    var label41 = new BMapGL.Label(content41, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label41);                        // 将标注添加到地图中
+    
+//创建标注42
+var point = new BMapGL.Point(116.039435,39.709838);
+    var content42 = "42(京昆高速—15-04)";
+    var label42 = new BMapGL.Label(content42, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label42);                        // 将标注添加到地图中
+
+//创建标注43
+var point = new BMapGL.Point(116.047192,39.687839);
+    var content43 = "43(京昆高速—15-05)";
+    var label43 = new BMapGL.Label(content43, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label43);                        // 将标注添加到地图中
+    
+//创建标注44
+var point = new BMapGL.Point(115.948208,39.631138);
+    var content44 = "44(京昆高速—15-06)";
+    var label44 = new BMapGL.Label(content44, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label44);                        // 将标注添加到地图中
+
+//创建标注45
+var point = new BMapGL.Point(115.884729,39.621559);
+    var content45 = "45(京昆高速—15-07)";
+    var label45 = new BMapGL.Label(content45, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label45);                        // 将标注添加到地图中
+    
+//创建标注46
+var point = new BMapGL.Point(115.763874,39.561041);
+    var content46 = "46(京昆高速—15-08)";
+    var label46 = new BMapGL.Label(content46, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label46);                        // 将标注添加到地图中
+
+//创建标注47
+var point = new BMapGL.Point(115.753983,39.53728);
+    var content47 = "47(京昆高速—15-09)";
+    var label47 = new BMapGL.Label(content47, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label47);                        // 将标注添加到地图中
+    
+//创建标注48
+var point = new BMapGL.Point(115.868043,39.602524);
+    var content48 = "48(京昆高速—15-10)";
+    var label48 = new BMapGL.Label(content48, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label48);                        // 将标注添加到地图中
+
+//创建标注49
+var point = new BMapGL.Point(115.932407,39.632496);
+    var content49 = "49(京昆高速—15-11)";
+    var label49 = new BMapGL.Label(content49, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label49);                        // 将标注添加到地图中
+    
+//创建标注50
+var point = new BMapGL.Point(115.978131,39.627203);
+    var content50 = "50(京昆高速—15-12)";
+    var label50 = new BMapGL.Label(content50, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label50);                        // 将标注添加到地图中
+
+
+//创建标注51
+var point = new BMapGL.Point(116.038456,39.713321);
+    var content51 = "51(京昆高速—15-13)";
+    var label51 = new BMapGL.Label(content51, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label51);                        // 将标注添加到地图中
+    
+//创建标注52
+var point = new BMapGL.Point(116.035892,39.727515);
+    var content52 = "52(京昆高速—15-14)";
+    var label52 = new BMapGL.Label(content52, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label52);                        // 将标注添加到地图中
+
+//创建标注53
+var point = new BMapGL.Point(116.057536,39.766397);
+    var content53 = "53(京昆高速—15-15)";
+    var label53 = new BMapGL.Label(content53, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label53);                        // 将标注添加到地图中
+    
+//创建标注54
+var point = new BMapGL.Point(115.755133,39.539694);
+    var content54 = "54(京昆高速—DZGY-01)";
+    var label54 = new BMapGL.Label(content54, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label54);                        // 将标注添加到地图中
+
+   
+
+
+//创建标注55-74 京港澳
+
+//创建标注55
+    var point = new BMapGL.Point(116.272394,39.876106);
+    var content55 = "55(京港澳高速—25-01)";
+    var label55 = new BMapGL.Label(content55, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label55);                        // 将标注添加到地图中
+
+//创建标注56
+var point = new BMapGL.Point(116.246091,39.864458);
+    var content56 = "56(京港澳高速—25-02)";
+    var label56 = new BMapGL.Label(content56, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label56);                        // 将标注添加到地图中
+
+//创建标注57
+var point = new BMapGL.Point(116.214125,39.81993);
+    var content57 = "57(京港澳高速—25-04)";
+    var label57 = new BMapGL.Label(content57, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label57);                        // 将标注添加到地图中
+
+//创建标注58
+var point = new BMapGL.Point(116.159872,39.770945);
+    var content58 = "58(京港澳高速—25-05)";
+    var label58 = new BMapGL.Label(content58, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label58);                        // 将标注添加到地图中
+
+//创建标注59
+var point = new BMapGL.Point(116.177636,39.78738);
+    var content59 = "59(京港澳高速—25-06)";
+    var label59 = new BMapGL.Label(content59, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label59);                        // 将标注添加到地图中
+
+//创建标注60
+var point = new BMapGL.Point(116.15979,39.771217);
+    var content60 = "60(京港澳高速—25-08)";
+    var label60 = new BMapGL.Label(content60, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label60);                        // 将标注添加到地图中
+
+//创建标注61
+var point = new BMapGL.Point(116.144609,39.758589);
+    var content61 = "61(京港澳高速—25-09)";
+    var label61 = new BMapGL.Label(content61, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label61);                        // 将标注添加到地图中
+
+//创建标注62
+var point = new BMapGL.Point(116.119474,39.737352);
+    var content62 = "62(京港澳高速—25-10)";
+    var label62 = new BMapGL.Label(content62, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label62);                        // 将标注添加到地图中
+
+//创建标注63
+var point = new BMapGL.Point(116.096552,39.688439);
+    var content63 = "63(京港澳高速—25-11)";
+    var label63 = new BMapGL.Label(content63, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label63);                        // 将标注添加到地图中
+
+//创建标注64
+var point = new BMapGL.Point(116.050392,39.588493);
+    var content64 = "64(京港澳高速—25-13)";
+    var label64 = new BMapGL.Label(content64, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label64);                        // 将标注添加到地图中
+
+
+//创建标注65
+var point = new BMapGL.Point(116.059263,39.595397);
+    var content65 = "65(京港澳高速—25-14)";
+    var label65 = new BMapGL.Label(content65, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label65);                        // 将标注添加到地图中
+
+//创建标注66
+var point = new BMapGL.Point(116.087699,39.634205);
+    var content66 = "66(京港澳高速—25-15)";
+    var label66 = new BMapGL.Label(content66, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label66);                        // 将标注添加到地图中
+    
+//创建标注67
+var point = new BMapGL.Point(116.113085,39.704307);
+    var content67 = "67(京港澳高速—25-16)";
+    var label67 = new BMapGL.Label(content67, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label67);                        // 将标注添加到地图中
+    
+//创建标注68
+var point = new BMapGL.Point(116.157612,39.767127);
+    var content68 = "68(京港澳高速—25-18)";
+    var label68 = new BMapGL.Label(content68, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label68);                        // 将标注添加到地图中
+    
+//创建标注69
+var point = new BMapGL.Point(116.163888,39.772945);
+    var content69 = "69(京港澳高速—25-19)";
+    var label69 = new BMapGL.Label(content69, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label69);                        // 将标注添加到地图中
+    
+//创建标注70
+var point = new BMapGL.Point(116.186561,39.789195);
+    var content70 = "70(京港澳高速—25-20)";
+    var label70 = new BMapGL.Label(content70, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label70);                        // 将标注添加到地图中
+
+//创建标注71
+var point = new BMapGL.Point(116.186565,39.789338);
+    var content71 = "71(京港澳高速—25-21)";
+    var label71 = new BMapGL.Label(content71, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label71);                        // 将标注添加到地图中
+
+//创建标注72
+var point = new BMapGL.Point(116.209679,39.810765);
+    var content72 = "72(京港澳高速—25-22)";
+    var label72 = new BMapGL.Label(content72, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label72);                        // 将标注添加到地图中
+
+//创建标注73
+var point = new BMapGL.Point(116.247753,39.864347);
+    var content73 = "73(京港澳高速—25-24)";
+    var label73 = new BMapGL.Label(content73, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label73);                        // 将标注添加到地图中
+
+
+//创建标注74
+var point = new BMapGL.Point(116.27075,39.87301);
+    var content74 = "74(京港澳高速—25-25)";
+    var label74 = new BMapGL.Label(content74, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label74);                        // 将标注添加到地图中
+
+
+//京开75~88
+
+//创建标注75
+var point = new BMapGL.Point(116.351526,39.814483);
+    var content75 = "75(京开高速—15-01)";
+    var label75 = new BMapGL.Label(content75, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label75);                        // 将标注添加到地图中
+
+//创建标注76
+var point = new BMapGL.Point(116.348234,39.772083);
+    var content76 = "76(京开高速—15-02)";
+    var label76 = new BMapGL.Label(content76, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label76);                        // 将标注添加到地图中
+
+//创建标注77
+var point = new BMapGL.Point(116.348005,39.775397);
+    var content77 = "77(京开高速—15-03)";
+    var label77 = new BMapGL.Label(content77, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label77);                        // 将标注添加到地图中
+
+
+//创建标注78
+var point = new BMapGL.Point(116.351105,39.726389);
+    var content78 = "78(京开高速—15-04)";
+    var label78 = new BMapGL.Label(content78, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label78);                        // 将标注添加到地图中
+
+//创建标注79
+var point = new BMapGL.Point(116.292985,39.489761);
+    var content79 = "79(京开高速—15-06)未找到";
+    var label79 = new BMapGL.Label(content79, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label79);                        // 将标注添加到地图中
+
+
+//创建标注80
+var point = new BMapGL.Point(116.292985,39.489961);
+    var content80 = "80(京开高速—15-07)未找到";
+    var label80 = new BMapGL.Label(content80, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label80);                        // 将标注添加到地图中
+
+//创建标注81
+var point = new BMapGL.Point(116.334581,39.610976);
+    var content81 = "81(京开高速—15-08)";
+    var label81 = new BMapGL.Label(content81, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label81);                        // 将标注添加到地图中
+
+//创建标注82
+var point = new BMapGL.Point(116.331135,39.663488);
+    var content82 = "82(京开高速—15-09)";
+    var label82 = new BMapGL.Label(content82, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label82);                        // 将标注添加到地图中
+
+//创建标注83
+var point = new BMapGL.Point(116.332194,39.679471);
+    var content83 = "83(京开高速—15-10)";
+    var label83 = new BMapGL.Label(content83, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label83);                        // 将标注添加到地图中
+
+//创建标注84
+var point = new BMapGL.Point(116.336321,39.702788);
+    var content84 = "84(京开高速—15-11)";
+    var label84 = new BMapGL.Label(content84, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label84);                        // 将标注添加到地图中
+
+//创建标注85
+var point = new BMapGL.Point(116.351291,39.723219);
+    var content85 = "85(京开高速—15-11)";
+    var label85 = new BMapGL.Label(content85, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label85);                        // 将标注添加到地图中
+
+//创建标注86
+var point = new BMapGL.Point(116.353281,39.731903);
+    var content86 = "86(京开高速—15-13)";
+    var label86 = new BMapGL.Label(content86, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label86);                        // 将标注添加到地图中
+
+//创建标注87
+var point = new BMapGL.Point(116.35294,39.740139);
+    var content87 = "87(京开高速—15-14)";
+    var label87 = new BMapGL.Label(content87, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label87);                        // 将标注添加到地图中
+
+//创建标注88
+var point = new BMapGL.Point(116.348742,39.778403);
+    var content88 = "88(京开高速—15-15)";
+    var label88 = new BMapGL.Label(content88, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label88);                        // 将标注添加到地图中
+
+
+
+//机场南北线89~107
+
+//创建标注89
+var point = new BMapGL.Point(116.615469,40.033996);
+    var content89 = "89(机场南线—09-01)";
+    var label89 = new BMapGL.Label(content89, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label89);                        // 将标注添加到地图中
+
+
+//创建标注90
+var point = new BMapGL.Point(116.630476,40.027791);
+    var content90 = "90(机场南线—09-02)";
+    var label90 = new BMapGL.Label(content90, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label90);                        // 将标注添加到地图中
+
+
+   //创建标注91
+var point = new BMapGL.Point(116.641638,40.028081);
+    var content91 = "91(机场南线—09-03)";
+    var label91 = new BMapGL.Label(content91, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label91);                        // 将标注添加到地图中
+    
+    //创建标注92
+var point = new BMapGL.Point(116.66771,40.041881);
+    var content92 = "92(机场南线—09-04)";
+    var label92 = new BMapGL.Label(content92, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label92);                        // 将标注添加到地图中
+
+    //创建标注93
+var point = new BMapGL.Point(116.629933,40.029121);
+    var content93 = "93(机场南线—09-05)";
+    var label93 = new BMapGL.Label(content93, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label93);                        // 将标注添加到地图中
+
+    //创建标注94
+var point = new BMapGL.Point(116.614993,40.035503);
+    var content94 = "94(机场南线—09-06)";
+    var label94 = new BMapGL.Label(content94, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label94);                        // 将标注添加到地图中
+
+
+    //创建标注95
+var point = new BMapGL.Point(116.601212,40.041637);
+    var content95 = "95(机场南线—09-07)";
+    var label95 = new BMapGL.Label(content95, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label95);                        // 将标注添加到地图中
+
+
+    //创建标注96
+    var point = new BMapGL.Point(116.490511,40.121735);
+    var content96 = "96(机场北线—15-01)";
+    var label96 = new BMapGL.Label(content96, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label96);                        // 将标注添加到地图中
+
+    //创建标注97
+    var point = new BMapGL.Point(116.508333,40.123315);
+    var content97 = "97(机场北线—15-02)";
+    var label97 = new BMapGL.Label(content97, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label97);                        // 将标注添加到地图中
+
+    //创建标注98
+    var point = new BMapGL.Point(116.520766,40.126287);
+    var content98 = "98(机场北线—15-03)";
+    var label98 = new BMapGL.Label(content98, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label98);                        // 将标注添加到地图中
+
+  //创建标注99
+  var point = new BMapGL.Point(116.564923,40.128936);
+    var content99 = "99(机场北线—15-04)";
+    var label99 = new BMapGL.Label(content99, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label99);                        // 将标注添加到地图中
+
+  //创建标注100
+  var point = new BMapGL.Point(116.586783,40.127273);
+    var content100 = "100(机场北线—15-07)";
+    var label100 = new BMapGL.Label(content100, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label100);                        // 将标注添加到地图中
+
+  //创建标注101
+  var point = new BMapGL.Point(116.590978,40.125376);
+    var content101 = "101(机场北线—15-09)";
+    var label101 = new BMapGL.Label(content101, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label101);                        // 将标注添加到地图中
+
+  //创建标注102
+  var point = new BMapGL.Point(116.573057,40.128418);
+    var content102 = "102(机场北线—15-10)";
+    var label102 = new BMapGL.Label(content102, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label102);                        // 将标注添加到地图中
+
+  //创建标注103
+  var point = new BMapGL.Point(116.556739,40.129547);
+    var content103 = "103(机场北线—15-11)";
+    var label103 = new BMapGL.Label(content103, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label103);                        // 将标注添加到地图中
+
+  //创建标注104
+  var point = new BMapGL.Point(116.535719,40.128176);
+    var content104 = "104(机场北线—15-12)";
+    var label104 = new BMapGL.Label(content104, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label104);                        // 将标注添加到地图中
+
+  //创建标注105
+  var point = new BMapGL.Point(116.538212,40.127878);
+    var content105 = "105(机场北线—15-13)";
+    var label105 = new BMapGL.Label(content105, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label105);                        // 将标注添加到地图中
+
+
+      //创建标注106
+  var point = new BMapGL.Point(116.51835,40.126501);
+    var content106 = "106(机场北线—15-14)";
+    var label106 = new BMapGL.Label(content106, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label106);                        // 将标注添加到地图中
+
+
+      //创建标注107
+  var point = new BMapGL.Point(116.490386,40.122625);
+    var content107 = "107(机场北线—15-15)";
+    var label107 = new BMapGL.Label(content107, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label107);                        // 将标注添加到地图中
+
+//京承108~121
+      //创建标注108
+      var point = new BMapGL.Point(116.452203,39.996933);
+    var content108 = "108(京承高速—16-01)";
+    var label108 = new BMapGL.Label(content108, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label108);                        // 将标注添加到地图中
+
+      //创建标注109
+      var point = new BMapGL.Point(116.456667,40.006346);
+    var content109 = "109(京承高速—16-02)";
+    var label109 = new BMapGL.Label(content109, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label109);                        // 将标注添加到地图中
+
+      //创建标注110
+      var point = new BMapGL.Point(116.46066,40.014038);
+    var content110 = "110(京承高速—16-03)";
+    var label110 = new BMapGL.Label(content110, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label110);                        // 将标注添加到地图中
+
+      //创建标注111
+      var point = new BMapGL.Point(116.460067,40.016494);
+    var content111 = "111(京承高速—16-04)";
+    var label111 = new BMapGL.Label(content111, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label111);                        // 将标注添加到地图中
+
+
+      //创建标注112
+      var point = new BMapGL.Point(116.463369,40.020956);
+    var content112 = "112(京承高速—16-05)";
+    var label112 = new BMapGL.Label(content112, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label112);                        // 将标注添加到地图中
+
+      //创建标注113
+      var point = new BMapGL.Point(116.462151,40.023135);
+    var content113 = "113(京承高速—16-06)";
+    var label113 = new BMapGL.Label(content113, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label113);                        // 将标注添加到地图中
+
+      //创建标注114
+      var point = new BMapGL.Point(116.480104,40.040292);
+    var content114 = "114(京承高速—16-07)";
+    var label114 = new BMapGL.Label(content114, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label114);                        // 将标注添加到地图中
+
+      //创建标注115
+      var point = new BMapGL.Point(116.480567,40.042063);
+    var content115 = "115(京承高速—16-08)";
+    var label115 = new BMapGL.Label(content115, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label115);                        // 将标注添加到地图中
+
+      //创建标注116
+      var point = new BMapGL.Point(116.489523,40.065076);
+    var content116 = "116(京承高速—16-09)";
+    var label116 = new BMapGL.Label(content116, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label116);                        // 将标注添加到地图中
+
+      //创建标注117
+      var point = new BMapGL.Point(116.488274,40.066919);
+    var content117 = "117(京承高速—16-10)";
+    var label117 = new BMapGL.Label(content117, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label117);                        // 将标注添加到地图中
+
+      //创建标注118
+      var point = new BMapGL.Point(116.488333,40.097695);
+    var content118 = "118(京承高速—16-11)";
+    var label118 = new BMapGL.Label(content118, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label118);                        // 将标注添加到地图中
+
+      //创建标注119
+      var point = new BMapGL.Point(116.487385,40.101317);
+    var content119 = "119(京承高速—16-12)";
+    var label119 = new BMapGL.Label(content119, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label119);                        // 将标注添加到地图中
+
+      //创建标注120
+      var point = new BMapGL.Point(116.491822,40.160427);
+    var content120 = "120(京承高速—16-15)";
+    var label120 = new BMapGL.Label(content120, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label120);                        // 将标注添加到地图中
+
+      //创建标注121
+      var point = new BMapGL.Point(116.490906,40.161623);
+    var content121 = "121(京承高速—16-16)";
+    var label121 = new BMapGL.Label(content121, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label121);                        // 将标注添加到地图中
+
+
+
+
+
+
+
+
+///四环
+    
+
+ //创建标注122
+    var point = new BMapGL.Point(116.480647,39.973472);
+    var content122 = "122(东四环路—1＃)";
+    var label122 = new BMapGL.Label(content122, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label122);                        // 将标注添加到地图中
+
+
+ //创建标注123
+    var point = new BMapGL.Point(116.485839,39.971285);
+    var content123 = "123(东四环路—2＃)";
+    var label123 = new BMapGL.Label(content123, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label123);                        // 将标注添加到地图中
+ 
+ //创建标注124
+    var point = new BMapGL.Point(116.493564,39.963944);
+    var content124 = "124(东四环路—3＃)";
+    var label124 = new BMapGL.Label(content124, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label124);                        // 将标注添加到地图中    
+
+
+ //创建标注125
+    var point = new BMapGL.Point(116.495702,39.957791);
+    var content125 = "125(东四环路—4＃)";
+    var label125 = new BMapGL.Label(content125, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label125);                        // 将标注添加到地图中    
+
+
+ //创建标注126
+    var point = new BMapGL.Point(116.496949,39.940062);
+    var content126 = "126(东四环路—5＃)";
+    var label126 = new BMapGL.Label(content126, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label126);                        // 将标注添加到地图中    
+
+
+ //创建标注127
+    var point = new BMapGL.Point(116.495926,39.930576);
+    var content127 = "127(东四环路—6＃)";
+    var label127 = new BMapGL.Label(content127, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label127);                        // 将标注添加到地图中    
+
+
+
+ //创建标注128
+    var point = new BMapGL.Point(116.494044,39.872973);
+    var content128 = "128(东四环路—7＃)";
+    var label128 = new BMapGL.Label(content128, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label128);                        // 将标注添加到地图中    
+
+
+
+ //创建标注129
+    var point = new BMapGL.Point(116.491852,39.858636);
+    var content129 = "129(东四环路—8＃)";
+    var label129 = new BMapGL.Label(content129, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label129);                        // 将标注添加到地图中    
+
+
+ //创建标注130
+    var point = new BMapGL.Point(116.491821,39.854069);
+    var content130 = "130(东四环路—9＃)";
+    var label130 = new BMapGL.Label(content130, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label130);                        // 将标注添加到地图中    
+
+
+
+ //创建标注131
+ var point = new BMapGL.Point(116.488113,39.850953);
+    var content131 = "131(东四环路—10＃)";
+    var label131 = new BMapGL.Label(content131, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label131);                        // 将标注添加到地图中    
+
+
+
+
+ //创建标注132
+ var point = new BMapGL.Point(116.483694,39.846698);
+    var content132 = "132(南四环路—1＃)";
+    var label132 = new BMapGL.Label(content132, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label132);                        // 将标注添加到地图中    
+
+
+
+    
+
+    
+
+
+
+
+
+     //创建标注133
+    var point = new BMapGL.Point(116.465901,39.838551);
+    var content133 = "133(南四环路—2＃)";
+    var label133 = new BMapGL.Label(content133, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label133);                        // 将标注添加到地图中    
+
+
+
+     //创建标注134
+    var point = new BMapGL.Point(116.45482,39.837269);
+    var content134 = "134(南四环路—3＃)";
+    var label134 = new BMapGL.Label(content134, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label134);                        // 将标注添加到地图中    
+    
+
+
+     //创建标注135
+    var point = new BMapGL.Point(116.443479,39.838537);
+    var content135 = "135(南四环路—4＃)";
+    var label135 = new BMapGL.Label(content135, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label135);                        // 将标注添加到地图中    
+    
+
+     //创建标注136
+    var point = new BMapGL.Point(116.410675,39.839039);
+    var content136 = "136(南四环路—5＃)";
+    var label136 = new BMapGL.Label(content136, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label136);                        // 将标注添加到地图中    
+     
+    
+
+     //创建标注137
+    var point = new BMapGL.Point(116.406749,39.83808);
+    var content137 = "137(南四环路—6＃)";
+    var label137 = new BMapGL.Label(content137, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label137);                        // 将标注添加到地图中    
+            
+
+     //创建标注138
+     var point = new BMapGL.Point(116.371851,39.837475);
+    var content138 = "138(南四环路—7＃)";
+    var label138 = new BMapGL.Label(content138, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label138);                        // 将标注添加到地图中    
+      
+    
+
+
+
+
+     //创建标注139
+    var point = new BMapGL.Point(116.352987,39.835996);
+    var content139 = "139(南四环路—8＃)";
+    var label139 = new BMapGL.Label(content139, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label139);                        // 将标注添加到地图中    
+                
+        
+
+     //创建标注140
+     var point = new BMapGL.Point(116.351905,39.837052);
+    var content140 = "140(南四环路—9＃)";
+    var label140 = new BMapGL.Label(content140, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label140);                        // 将标注添加到地图中    
+    
+     //创建标注141
+     var point = new BMapGL.Point(116.331351,39.835959);
+    var content141 = "141(南四环路—10＃)";
+    var label141 = new BMapGL.Label(content141, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label141);                        // 将标注添加到地图中    
+
+
+
+     //创建标注142
+    var point = new BMapGL.Point(116.31679,39.836977);
+    var content142 = "142(南四环路—11＃)";
+    var label142 = new BMapGL.Label(content142, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label142);                        // 将标注添加到地图中    
+
+
+     //创建标注143
+     var point = new BMapGL.Point(116.28614,39.88137);
+    var content143 = "143(西四环路—1＃)";
+    var label143 = new BMapGL.Label(content143, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label143);                        // 将标注添加到地图中    
+
+    
+    
+     //创建标注144
+    var point = new BMapGL.Point(116.282843,39.882034);
+    var content144 = "144(西四环路—2＃)";
+    var label144 = new BMapGL.Label(content144, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label144);                        // 将标注添加到地图中    
+
+
+    //创建标注145
+    var point = new BMapGL.Point(116.282495,39.889011);
+    var content145 = "145(西四环路—3＃)";
+    var label145 = new BMapGL.Label(content145, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label145);                        // 将标注添加到地图中    
+
+    //创建标注146
+    var point = new BMapGL.Point(116.280061,39.952855);
+    var content146 = "146(西四环路—4＃)";
+    var label146 = new BMapGL.Label(content146, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label146);                        // 将标注添加到地图中    
+
+
+    //创建标注147
+    var point = new BMapGL.Point(116.28068,39.970568);
+    var content147 = "147(西四环路—5＃)";
+    var label147 = new BMapGL.Label(content147, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label147);                        // 将标注添加到地图中    
+
+    
+    //创建标注148
+    var point = new BMapGL.Point(116.284233,39.977169);
+    var content148 = "148(西四环路—6＃)";
+    var label148 = new BMapGL.Label(content148, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label148);                        // 将标注添加到地图中    
+
+        
+    //创建标注149
+    var point = new BMapGL.Point(116.303493,39.990242);
+    var content149 = "149(西四环路—7＃)";
+    var label149 = new BMapGL.Label(content149, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label149);                        // 将标注添加到地图中    
+//五环
+    
+    //创建标注150
+    var point = new BMapGL.Point(116.475554,40.02122);
+    var content150 = "150(北五环—08-01)";
+    var label150 = new BMapGL.Label(content150, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label150);                        // 将标注添加到地图中    
+    
+    //创建标注151
+    var point = new BMapGL.Point(116.450537,40.025955);
+    var content151 = "151(北五环—08-02)";
+    var label151 = new BMapGL.Label(content151, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label151);                        // 将标注添加到地图中    
+    
+  
+    //创建标注152
+    var point = new BMapGL.Point(116.367389,40.028549);
+    var content152 = "152(北五环—08-04)";
+    var label152 = new BMapGL.Label(content152, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label152);                        // 将标注添加到地图中    
+
+    //创建标注153
+    var point = new BMapGL.Point(116.470084,40.020612);
+    var content153 = "153(北五环—08-06)";
+    var label153 = new BMapGL.Label(content153, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label153);                        // 将标注添加到地图中    
+
+    //创建标注154
+    var point = new BMapGL.Point(116.478591,40.020498);
+    var content154 = "154(北五环—08-06)";
+    var label154 = new BMapGL.Label(content154, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label154);                        // 将标注添加到地图中    
+    
+    //创建标注155
+    var point = new BMapGL.Point(116.487485,40.0202248);
+    var content155 = "155(北五环—08-07)";
+    var label155 = new BMapGL.Label(content155, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label155);                        // 将标注添加到地图中    
+
+
+    //创建标注156
+    var point = new BMapGL.Point(116.50174,40.009458);
+    var content156 = "156(北五环—08-08)";
+    var label156 = new BMapGL.Label(content156, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label156);                        // 将标注添加到地图中    
+
+    //创建标注157
+    var point = new BMapGL.Point(116.511369,40.000988);
+    var content157 = "157(东五环—14-01)";
+    var label157 = new BMapGL.Label(content157, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label157);                        // 将标注添加到地图中        
+
+
+    //创建标注158
+    var point = new BMapGL.Point(116.534991,39.965226);
+    var content158 = "158(东五环—14-02)";
+    var label158 = new BMapGL.Label(content158, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label158);                        // 将标注添加到地图中        
+
+    //创建标注159
+    var point = new BMapGL.Point(116.536321,39.964752);
+    var content159 = "159(东五环—14-03)";
+    var label159 = new BMapGL.Label(content159, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label159);                        // 将标注添加到地图中          
+
+    //创建标注160
+    var point = new BMapGL.Point(116.54886,39.948496);
+    var content160 = "160(东五环—14-04)";
+    var label160 = new BMapGL.Label(content160, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label160);                        // 将标注添加到地图中  
+    
+    
+    //创建标注161
+    var point = new BMapGL.Point(116.550155,39.916262);
+    var content161 = "161(东五环—14-06)";
+    var label161 = new BMapGL.Label(content161, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label161);                        // 将标注添加到地图中  
+
+  //创建标注162
+  var point = new BMapGL.Point(116.551426,39.914847);
+    var content162 = "162(东五环—14-07)";
+    var label162 = new BMapGL.Label(content162, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label162);                        // 将标注添加到地图中      
+
+  //创建标注163
+  var point = new BMapGL.Point(116.552747,39.902356);
+    var content163 = "163(东五环—14-08)";
+    var label163 = new BMapGL.Label(content163, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label163);                        // 将标注添加到地图中              
+
+  //创建标注164
+  var point = new BMapGL.Point(116.555124,39.873036);
+    var content164 = "164(东五环—14-09)";
+    var label164 = new BMapGL.Label(content164, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label164);                        // 将标注添加到地图中        
+    
+  //创建标注165
+  var point = new BMapGL.Point(116.553911,39.893902);
+    var content165 = "165(东五环—14-10)";
+    var label165 = new BMapGL.Label(content165, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label165);                        // 将标注添加到地图中      
+   
+  //创建标注166
+  var point = new BMapGL.Point(116.532815,39.839771);
+    var content166 = "166(东五环—14-13)";
+    var label166 = new BMapGL.Label(content166, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label166);                        // 将标注添加到地图中          
+
+  //创建标注167
+  var point = new BMapGL.Point(116.524725,39.833521);
+    var content167 = "167(东五环—14-14)";
+    var label167 = new BMapGL.Label(content167, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label167);                        // 将标注添加到地图中          
+   
+
+
+
+ //创建标注168~195 南六环 东六环
+
+  //创建标注168
+  var point = new BMapGL.Point(116.563575,39.752164);
+    var content168 = "168(南六环—19-13)";
+    var label168 = new BMapGL.Label(content168, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label168);                        // 将标注添加到地图中          
+
+  //创建标注169
+  var point = new BMapGL.Point(116.581381,39.759037);
+    var content169 = "169(南六环—19-14)";
+    var label169 = new BMapGL.Label(content169, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label169);                        // 将标注添加到地图中         
+
+  //创建标注170
+  var point = new BMapGL.Point(116.641741,39.806374);
+    var content170 = "170(东六环—19-15)";
+    var label170 = new BMapGL.Label(content170, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label170);                        // 将标注添加到地图中        
+
+  //创建标注171
+  var point = new BMapGL.Point(116.654075,39.815768);
+    var content171 = "171(东六环—19-16)";
+    var label171 = new BMapGL.Label(content171, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label171);                        // 将标注添加到地图中        
+
+  //创建标注172
+  var point = new BMapGL.Point(116.685722,39.841472);
+    var content172 = "172(东六环—19-17)";
+    var label172 = new BMapGL.Label(content172, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label172);                        // 将标注添加到地图中        
+    
+  //创建标注173
+  var point = new BMapGL.Point(116.717295,39.891185);
+    var content173 = "173(东六环—19-18)";
+    var label173 = new BMapGL.Label(content173, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label173);                        // 将标注添加到地图中  
+
+  //创建标注174
+  var point = new BMapGL.Point(116.714655,39.933003);
+    var content174 = "174(东六环—19-19)";
+    var label174 = new BMapGL.Label(content174, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label174);                        // 将标注添加到地图中  
+
+  //创建标注175
+  var point = new BMapGL.Point(116.710559,39.957544);
+    var content175 = "175(东六环—18-18)";
+    var label175 = new BMapGL.Label(content175, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label175);                        // 将标注添加到地图中  
+ 
+   //创建标注176
+  var point = new BMapGL.Point(116.716511,39.992695);
+    var content176 = "176(东六环—18-17)";
+    var label176 = new BMapGL.Label(content176, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label176);                        // 将标注添加到地图中  
+
+   //创建标注177
+   var point = new BMapGL.Point(116.641423,40.085258);
+    var content177 = "177(东六环—18-15)";
+    var label177 = new BMapGL.Label(content177, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label177);                        // 将标注添加到地图中  
+
+   //创建标注178
+   var point = new BMapGL.Point(116.630437,40.123305);
+    var content178 = "178(东六环—18-14)";
+    var label178 = new BMapGL.Label(content178, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label178);                        // 将标注添加到地图中  
+
+   //创建标注179
+   var point = new BMapGL.Point(116.603887,40.149382);
+    var content179 = "179(北六环—18-13)";
+    var label179 = new BMapGL.Label(content179, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label179);                        // 将标注添加到地图中  
+
+   //创建标注180
+   var point = new BMapGL.Point(116.429192,40.164634);
+    var content180 = "180(北六环—18-09)";
+    var label180 = new BMapGL.Label(content180, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label180);                        // 将标注添加到地图中  
+
+   //创建标注181
+   var point = new BMapGL.Point(116.409329,40.164916);
+    var content181 = "181(北六环—18-07)";
+    var label181 = new BMapGL.Label(content181, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label181);                        // 将标注添加到地图中  
+
+   //创建标注182
+   var point = new BMapGL.Point(116.342488,40.176983);
+    var content182 = "182(北六环—18-05)";
+    var label182 = new BMapGL.Label(content182, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label182);                        // 将标注添加到地图中  
+
+   //创建标注182
+   var point = new BMapGL.Point(116.342488,40.176983);
+    var content182 = "182(北六环—18-05)";
+    var label182 = new BMapGL.Label(content182, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label182);                        // 将标注添加到地图中  
+
+   //创建标注183
+   var point = new BMapGL.Point(116.295843,40.182974);
+    var content183 = "183(北六环—18-03)";
+    var label183 = new BMapGL.Label(content183, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label183);                        // 将标注添加到地图中  
+
+
+   //创建标注184
+   var point = new BMapGL.Point(116.338347,40.177352);
+    var content184 = "184(北六环—18-04)";
+    var label184 = new BMapGL.Label(content184, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label184);                        // 将标注添加到地图中  
+
+
+   //创建标注185
+   var point = new BMapGL.Point(116.406881,40.164665);
+    var content185 = "185(北六环—18-06)";
+    var label185 = new BMapGL.Label(content185, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label185);                        // 将标注添加到地图中  
+
+   //创建标注186
+   var point = new BMapGL.Point(116.414548,40.163946);
+    var content186 = "186(北六环—18-08)";
+    var label186 = new BMapGL.Label(content186, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label186);                        // 将标注添加到地图中 
+
+   //创建标注187
+   var point = new BMapGL.Point(116.5595,40.150933);
+    var content187 = "187(北六环—18-11)";
+    var label187 = new BMapGL.Label(content187, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label187);                        // 将标注添加到地图中 
+
+   //创建标注188
+   var point = new BMapGL.Point(116.603016,40.147421);
+    var content188 = "188(北六环—18-12)";
+    var label188 = new BMapGL.Label(content188, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label188);                        // 将标注添加到地图中 
+
+   //创建标注189
+   var point = new BMapGL.Point(116.685512,40.016389);
+    var content189 = "189(东六环—18-16)";
+    var label189 = new BMapGL.Label(content189, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label189);                        // 将标注添加到地图中 
+
+   //创建标注190
+   var point = new BMapGL.Point(116.690784,39.847519);
+    var content190 = "190(东六环—19-01)";
+    var label190 = new BMapGL.Label(content190, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label190);                        // 将标注添加到地图中 
+
+   //创建标注191
+   var point = new BMapGL.Point(116.644727,39.809742);
+    var content191 = "191(东六环—19-03)";
+    var label191 = new BMapGL.Label(content191, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label191);                        // 将标注添加到地图中 
+
+   //创建标注192
+   var point = new BMapGL.Point(116.588352,39.762025);
+    var content192 = "192(南六环—19-04)";
+    var label192 = new BMapGL.Label(content192, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label192);                        // 将标注添加到地图中 
+
+   //创建标注193
+   var point = new BMapGL.Point(116.551621,39.752624);
+    var content193 = "193(南六环—19-05)";
+    var label193 = new BMapGL.Label(content193, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label193);                        // 将标注添加到地图中 
+
+   //创建标注194
+   var point = new BMapGL.Point(116.520157,39.74596);
+    var content194 = "194(南六环—19-06)";
+    var label194 = new BMapGL.Label(content194, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label194);                        // 将标注添加到地图中 
+
+   //创建标注195
+   var point = new BMapGL.Point(116.490132,39.736223);
+    var content195 = "195(南六环—19-07)";
+    var label195 = new BMapGL.Label(content195, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label195);                        // 将标注添加到地图中 
+
+
+
+
+//196~207 京平高速速
+   //创建标注196
+   var point = new BMapGL.Point(116.934062,40.06894);
+    var content196 = "196(京平高速—19-05)";
+    var label196 = new BMapGL.Label(content196, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label196);                        // 将标注添加到地图中 
+
+   //创建标注197
+   var point = new BMapGL.Point(117.015055,40.072938);
+    var content197 = "197(京平高速—19-06)";
+    var label197 = new BMapGL.Label(content197, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label197);                        // 将标注添加到地图中 
+
+   //创建标注198
+   var point = new BMapGL.Point(117.088474,40.093441);
+    var content198 = "198(京平高速—19-07)";
+    var label198 = new BMapGL.Label(content198, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label198);                        // 将标注添加到地图中 
+
+   //创建标注199
+   var point = new BMapGL.Point(117.107532,40.098379);
+    var content199 = "199(京平高速—19-08)";
+    var label199 = new BMapGL.Label(content199, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label199);                        // 将标注添加到地图中 
+
+   //创建标注200
+   var point = new BMapGL.Point(117.197447,40.13792);
+    var content200 = "200(京平高速—19-09)";
+    var label200 = new BMapGL.Label(content200, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label200);                        // 将标注添加到地图中 
+    
+   //创建标注201
+   var point = new BMapGL.Point(117.194507,40.138568);
+    var content201 = "201(京平高速—19-10)";
+    var label201 = new BMapGL.Label(content201, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label201);                        // 将标注添加到地图中 
+
+   //创建标注202
+   var point = new BMapGL.Point(117.172472,40.133535);
+    var content202 = "202(京平高速—19-11)";
+    var label202 = new BMapGL.Label(content202, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label202);                        // 将标注添加到地图中 
+
+
+   //创建标注203
+   var point = new BMapGL.Point(117.149003,40.123777);
+    var content203 = "203(京平高速—19-12)";
+    var label203 = new BMapGL.Label(content203, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label203);                        // 将标注添加到地图中 
+
+
+   //创建标注204
+   var point = new BMapGL.Point(117.042159,40.08396);
+    var content204 = "204(京平高速—19-13)";
+    var label204 = new BMapGL.Label(content204, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label204);                        // 将标注添加到地图中 
+
+       //创建标注205
+   var point = new BMapGL.Point(116.98731,40.069758);
+    var content205 = "205(京平高速—19-14)";
+    var label205 = new BMapGL.Label(content205, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label205);                        // 将标注添加到地图中 
+
+       //创建标注206
+   var point = new BMapGL.Point(116.933361,40.070217);
+    var content206 = "206(京平高速—19-15)";
+    var label206 = new BMapGL.Label(content206, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label206);                        // 将标注添加到地图中 
+
+       //创建标注207
+   var point = new BMapGL.Point(116.872649,40.064372);
+    var content207 = "207(京平高速—19-16)";
+    var label207 = new BMapGL.Label(content207, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label207);                        // 将标注添加到地图中 
+
+
+
+    //创建标注208~225 京沪高速
+
+       //创建标注208
+       var point = new BMapGL.Point(116.566822,39.769086);
+    var content208 = "208(京沪高速—18-01)";
+    var label208 = new BMapGL.Label(content208, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label208);                        // 将标注添加到地图中 
+
+       //创建标注209
+       var point = new BMapGL.Point(116.505427,39.830463);
+    var content209 = "209(京沪高速—18-02)";
+    var label209 = new BMapGL.Label(content209, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label209);                        // 将标注添加到地图中 
+       //创建标注210
+       var point = new BMapGL.Point(116.517159,39.822049);
+    var content210 = "210(京沪高速—18-03)";
+    var label210 = new BMapGL.Label(content210, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label210);                        // 将标注添加到地图中 
+       //创建标注211
+       var point = new BMapGL.Point(116.541961,39.79623);
+    var content211 = "211(京沪高速—18-04)";
+    var label211 = new BMapGL.Label(content211, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label211);                        // 将标注添加到地图中 
+       //创建标注212
+       var point = new BMapGL.Point(116.574848,39.75838);
+    var content212 = "212(京沪高速—18-05)";
+    var label212 = new BMapGL.Label(content212, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label212);                        // 将标注添加到地图中 
+       //创建标注213
+       var point = new BMapGL.Point(116.586939,39.748499);
+    var content213 = "213(京沪高速—18-06)";
+    var label213 = new BMapGL.Label(content213, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label213);                        // 将标注添加到地图中 
+       //创建标注214
+       var point = new BMapGL.Point(116.626748,39.714731);
+    var content214 = "214(京沪高速—18-07)";
+    var label214 = new BMapGL.Label(content214, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label214);                        // 将标注添加到地图中 
+       //创建标注215
+       var point = new BMapGL.Point(116.684017,39.668393);
+    var content215 = "215(京沪高速—18-08)";
+    var label215 = new BMapGL.Label(content215, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label215);                        // 将标注添加到地图中 
+       //创建标注216
+       var point = new BMapGL.Point(116.554931,39.78578);
+    var content216 = "216(京沪高速—18-09)";
+    var label216 = new BMapGL.Label(content216, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label216);                        // 将标注添加到地图中 
+       //创建标注217
+       var point = new BMapGL.Point(116.554976,39.784421);
+    var content217 = "217(京沪高速—18-10)";
+    var label217 = new BMapGL.Label(content217, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label217);                        // 将标注添加到地图中 
+       //创建标注218
+       var point = new BMapGL.Point(116.686806,39.666935);
+    var content218 = "218(京沪高速—18-11)";
+    var label218 = new BMapGL.Label(content218, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label218);                        // 将标注添加到地图中 
+       //创建标注219
+       var point = new BMapGL.Point(116.607097,39.736751);
+    var content219 = "219(京沪高速—18-12)";
+    var label219 = new BMapGL.Label(content219, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label219);                        // 将标注添加到地图中 
+       //创建标注220
+       var point = new BMapGL.Point(116.578388,39.75585);
+    var content220 = "220(京沪高速—18-13)";
+    var label220 = new BMapGL.Label(content220, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label220);                        // 将标注添加到地图中 
+       //创建标注221
+       var point = new BMapGL.Point(116.567882,39.768667);
+    var content221 = "221(京沪高速—18-14)";
+    var label221 = new BMapGL.Label(content221, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label221);                        // 将标注添加到地图中 
+       //创建标注222
+       var point = new BMapGL.Point(116.53446,39.807563);
+    var content222 = "222(京沪高速—18-15)";
+    var label222 = new BMapGL.Label(content222, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label222);                        // 将标注添加到地图中 
+       //创建标注223
+       var point = new BMapGL.Point(116.526039,39.816898);
+    var content223 = "223(京沪高速—18-16)";
+    var label223 = new BMapGL.Label(content223, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label223);                        // 将标注添加到地图中 
+       //创建标注224
+       var point = new BMapGL.Point(116.517231,39.822023);
+    var content224 = "224(京沪高速—18-17)";
+    var label224 = new BMapGL.Label(content224, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label224);                        // 将标注添加到地图中 
+       //创建标注225
+       var point = new BMapGL.Point(116.493817,39.840161);
+    var content225 = "225(京沪高速—18-18)";
+    var label225 = new BMapGL.Label(content225, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label225);                        // 将标注添加到地图中 
+
+
+
+
+
+
+
+
+//南五环226~228
+  //创建标注226
+  var point = new BMapGL.Point(116.458371,39.796258);
+    var content226 = "226(南五环—12-11)";
+    var label226 = new BMapGL.Label(content226, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label226);                        // 将标注添加到地图中          
+   
+    
+  //创建标注227
+  var point = new BMapGL.Point(116.556677,39.86146);
+    var content227 = "227(南五环—14-11)";
+    var label227 = new BMapGL.Label(content227, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label227);                        // 将标注添加到地图中       
+
+  //创建标注228
+  var point = new BMapGL.Point(116.551192,39.852009);
+    var content228 = "228(南五环—14-12)";
+    var label228 = new BMapGL.Label(content228, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label228);                        // 将标注添加到地图中       
+
+
+
+   
+//229~243 京哈高速
+
+ //创建标注229
+  var point = new BMapGL.Point(116.506808,39.876823);
+    var content229 = "229(京哈高速—15-01)";
+    var label229 = new BMapGL.Label(content229, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label229);                        // 将标注添加到地图中       
+
+ //创建标注230
+ var point = new BMapGL.Point(116.583829,39.873006);
+    var content230 = "230(京哈高速—15-02)";
+    var label230 = new BMapGL.Label(content230, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label230);                        // 将标注添加到地图中       
+
+ //创建标注231
+ var point = new BMapGL.Point(116.707369,39.842096);
+    var content231 = "231(京哈高速—15-03)";
+    var label231 = new BMapGL.Label(content231, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label231);                        // 将标注添加到地图中       
+
+ //创建标注232
+ var point = new BMapGL.Point(116.744648,39.832383);
+    var content232 = "232(京哈高速—15-04)";
+    var label232 = new BMapGL.Label(content232, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label232);                        // 将标注添加到地图中       
+
+ //创建标注233
+ var point = new BMapGL.Point(116.801723,39.811842);
+    var content233 = "233(京哈高速—15-05)";
+    var label233 = new BMapGL.Label(content233, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label233);                        // 将标注添加到地图中       
+
+ //创建标注234
+ var point = new BMapGL.Point(116.842667,39.808704);
+    var content234 = "234(京哈高速—15-06)";
+    var label234 = new BMapGL.Label(content234, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label234);                        // 将标注添加到地图中      
+
+ //创建标注235
+ var point = new BMapGL.Point(116.938795,39.806015);
+    var content235 = "235(京哈高速—15-07)";
+    var label235 = new BMapGL.Label(content235, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label235);                        // 将标注添加到地图中          
+
+ //创建标注236
+ var point = new BMapGL.Point(116.864397,39.810124);
+    var content236 = "236(京哈高速—15-08)";
+    var label236 = new BMapGL.Label(content236, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label236);                        // 将标注添加到地图中   
+
+ //创建标注237
+ var point = new BMapGL.Point(116.851354,39.810505);
+    var content237 = "237(京哈高速—15-09)";
+    var label237 = new BMapGL.Label(content237, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label237);                        // 将标注添加到地图中   
+
+ //创建标注238
+ var point = new BMapGL.Point(116.837902,39.809067);
+    var content238 = "238(京哈高速—15-10)";
+    var label238 = new BMapGL.Label(content238, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label238);                        // 将标注添加到地图中   
+
+ //创建标注239
+ var point = new BMapGL.Point(116.750977,39.831022);
+    var content239 = "239(京哈高速—15-11)";
+    var label239 = new BMapGL.Label(content239, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label239);                        // 将标注添加到地图中   
+
+ //创建标注240
+ var point = new BMapGL.Point(116.67772,39.846885);
+    var content240 = "240(京哈高速—15-12)";
+    var label240 = new BMapGL.Label(content240, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label240);                        // 将标注添加到地图中  
+
+ //创建标注241
+ var point = new BMapGL.Point(116.589637,39.873688);
+    var content241 = "241(京哈高速—15-13)";
+    var label241 = new BMapGL.Label(content241, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label241);                        // 将标注添加到地图中  
+
+ //创建标注242
+ var point = new BMapGL.Point(116.583843,39.874013);
+    var content242 = "242(京哈高速—15-14)";
+    var label242 = new BMapGL.Label(content242, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label242);                        // 将标注添加到地图中 
+
+     //创建标注243
+ var point = new BMapGL.Point(116.511794,39.87737);
+    var content243 = "243(京哈高速—15-15)";
+    var label243 = new BMapGL.Label(content243, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label243);                        // 将标注添加到地图中 
+
+
+
+    
+//南五环244~245
+
+  //创建标注244
+  var point = new BMapGL.Point(116.482897,39.811401);
+    var content244 = "244(南五环—12-12)";
+    var label244 = new BMapGL.Label(content244, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label244);                        // 将标注添加到地图中       
+
+
+  //创建标注245
+  var point = new BMapGL.Point(116.48123,39.811277);
+    var content245 = "245(南五环—12-03)";
+    var label245 = new BMapGL.Label(content245, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label245);                        // 将标注添加到地图中       
+
+
+
+
+//246~256 京津高速速
+
+  //创建标注246
+  var point = new BMapGL.Point(116.593047,39.832061);
+    var content246 = "246(京津高速—11-11)";
+    var label246 = new BMapGL.Label(content246, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label246);                        // 将标注添加到地图中       
+
+  //创建标注247
+  var point = new BMapGL.Point(116.59135,39.832123);
+    var content247 = "247(京津高速—11-01)";
+    var label247 = new BMapGL.Label(content247, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label247);                        // 将标注添加到地图中       
+
+  //创建标注248
+  var point = new BMapGL.Point(116.637437,39.801881);
+    var content248 = "248(京津高速—11-09)";
+    var label248 = new BMapGL.Label(content248, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label248);                        // 将标注添加到地图中       
+
+  //创建标注249
+  var point = new BMapGL.Point(116.636161,39.801971);
+    var content249 = "249(京津高速—11-02)";
+    var label249 = new BMapGL.Label(content249, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label249);                        // 将标注添加到地图中       
+
+  //创建标注250
+  var point = new BMapGL.Point(116.608513,39.821216);
+    var content250 = "250(京津高速—11-10)";
+    var label250 = new BMapGL.Label(content250, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label250);                        // 将标注添加到地图中           
+
+  //创建标注251
+  var point = new BMapGL.Point(116.817827,39.648442);
+    var content251 = "251(京津高速—11-03)";
+    var label251 = new BMapGL.Label(content251, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label251);                        // 将标注添加到地图中           
+
+  //创建标注252
+  var point = new BMapGL.Point(116.822489,39.646866);
+    var content252 = "252(京津高速—11-04)";
+    var label252 = new BMapGL.Label(content252, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label252);                        // 将标注添加到地图中           
+
+  //创建标注253
+  var point = new BMapGL.Point(116.789722,39.670564);
+    var content253 = "253(京津高速—11-05)";
+    var label253 = new BMapGL.Label(content253, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label253);                        // 将标注添加到地图中         
+
+  //创建标注254
+  var point = new BMapGL.Point(116.768616,39.688393);
+    var content254 = "254(京津高速—11-05)";
+    var label254 = new BMapGL.Label(content254, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label254);                        // 将标注添加到地图中         
+
+  //创建标注255
+  var point = new BMapGL.Point(116.705611,39.745069);
+    var content255 = "255(京津高速—11-05)";
+    var label255 = new BMapGL.Label(content255, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label255);                        // 将标注添加到地图中         
+
+  //创建标注256
+  var point = new BMapGL.Point(116.689553,39.757259);
+    var content256 = "256(京津高速—11-08)";
+    var label256 = new BMapGL.Label(content256, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label256);                        // 将标注添加到地图中         
+
+
+
+ //257~258 通燕高速
+
+
+  //创建标注257
+  var point = new BMapGL.Point(116.720497,39.928878);
+    var content257 = "257(通燕 —08-02)";
+    var label257 = new BMapGL.Label(content257, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label257);                        // 将标注添加到地图中       
+
+      //创建标注258
+    var point = new BMapGL.Point(116.720214,39.929625);
+    var content258 = "258(通燕 —08-05)";
+    var label258 = new BMapGL.Label(content258, {       // 创建文本标注
+    position: point,                          // 设置标注的地理位置BMapGL
+    offset: new BMapGL.Size(1, 1)           // 设置标注的偏移量
+                                        })  
+    map.addOverlay(label258);                        // 将标注添加到地图中       
+
+
+
+
+
+  
+ </script>
+ </div>
+</main>
+<footer-component></footer-component>
+</body>
+</html>

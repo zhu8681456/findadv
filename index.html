@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+  </head>
+
+
+  <body>
+
+    
+    <header-component></header-component>
+    <main>
+      <!-- Your page's content -->
+      <a>广告牌位置</a>
+      <iframe src="Book1.txt" name=iframe1 width="100%" height="100%"></iframe>
+      
+      <div id=div1></div>
+    
+      <script>
+     
+      //在iframe1中已经显示有TXT文本的内容，下面代码是把TXT中的内容中的HTML标记取消，只取得文本
+      var txtval=ifram1.body.innerText;
+      //把文本显示在div1中j
+      div1.innerHTML=txtval;
+      </script>
+
+      
+    </main>
+    <footer-component></footer-component>
+  </body>
+<html>
